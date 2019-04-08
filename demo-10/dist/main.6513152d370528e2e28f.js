@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[0],{tjUo:function(n,e,o){"use strict";o.r(e);var t,a=o("9va6"),c=o.n(a);document.body.appendChild(((t=document.createElement("div")).innerHTML=c.a.join(["Hello","webpack"]," "),t))}},[["tjUo",1,2]]]);
