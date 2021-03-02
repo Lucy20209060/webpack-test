@@ -20,7 +20,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
     // filename: '[name].' + getTime() + '.js',
   },
   mode: 'production',
@@ -34,6 +34,7 @@ module.exports = {
       filename:'index.html'
     }),
     new SetScriptTimestampPlugin(),
+    // 输出文件增加注释
     new webpack.BannerPlugin(`Lucas\n${getTime('time')}\n`),
   ],
 }
