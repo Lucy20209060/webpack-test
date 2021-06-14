@@ -1,6 +1,7 @@
 const path = require('path')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const TestPlugin = require('./test-plugin.js')
 
 module.exports = {
   entry: './main.js',
@@ -47,5 +48,6 @@ module.exports = {
       title: '管理输出',
       time: '2020-09-26 21:23:00',
     }),
+    new TestPlugin(),
   ],
 }
